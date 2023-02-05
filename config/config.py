@@ -20,17 +20,17 @@ from KillerXMusic.nocmds.devep import *
 load_dotenv()
 
 # Get it from my.telegram.org
-API_ID = int(getenv("API_ID", ""))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID", "28509321"))
+API_HASH = getenv("API_HASH", "ecab5787223afbadb69907b8b5ec405e")
 
 ## Get it from @Botfather in Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("BOT_TOKEN", "5016118641:AAGi4aYrjgAFFpIOn-TwZPaAFpp5w-MRfMU")
 
 # BOTFATHER WITHOUT @
-BOT_USERNAME = getenv("BOT_USERNAME")
+BOT_USERNAME = getenv("BOT_USERNAME", "streaming_robot")
 
 # Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-Mongodb-URI-04-06
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://music:music@cluster0.5qtnsqv.mongodb.net/?retryWrites=true&w=majority")
 
 # Custom max audio(music) duration for voice chat. set DURATION_LIMIT in variables with your own time(mins), Default to 60 mins.
 DURATION_LIMIT_MIN = int(
@@ -43,10 +43,10 @@ SONG_DOWNLOAD_DURATION = int(
 )  # Remember to give value in Minutes
 
 # You'll need a Private Group ID for this.
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001543119432"))
 
 # A name for your Music bot.
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "Streaming EON")
 
 # COMMAND PRFIX
 COMMAND_PREFIXES = list(getenv("COMMAND_PREFIXES", "/ ! .").split())
@@ -62,12 +62,10 @@ GIT_TOKEN = getenv("GIT_TOKEN", "")
 
 # Only  Links formats are  accepted for this Var value.
 SUPPORT_CHANNEL = getenv(
-    "SUPPORT_CHANNEL", idk("aHR0cHM6Ly90Lm1lL1JlbmR5UHJvamVjdHM=").decode("utf-8"),
-)
+    "SUPPORT_CHANNEL", "https://t.me/+ku2kx0h4KRFkOTll")
 
 SUPPORT_GROUP = getenv(
-    "SUPPORT_GROUP", idk("aHR0cHM6Ly90Lm1lL0tpbGxlclhTdXBwb3J0").decode("utf-8"),
-)
+    "SUPPORT_GROUP")
 
 # Set it in True if you want to leave your assistant after a certain amount of time. [Set time via AUTO_LEAVE_ASSISTANT_TIME]
 AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", None)
@@ -133,7 +131,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 
 
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @YukkiStringBot
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = getenv("STRING_SESSION", "BQAJ366YJPae11zNYxhp9wx8YuUcqqaCokUEHLe_udIfhtOHrm5J9-Qih8kOmC1DZ3KTzG4Zun7IecBpXWED0fsCfWdk8H8skwVaaKQesOVOMxK4M7nfApts5PqssyLAMgCjbFTIS000SUvxCzNJ440bjilXrZNOGnCZZlp5nacY5uvqo6ZX3O0Vlb9NRi6QiZzKoUDOghC6rDZ4uk3m86VXgcWtgZwt1k5uFF-MqXp1p-ygILIp2KABgzAjyaPI092h87XX0INhh9AxqP8t8lUaPLmdsHhUrV6VZyXDwIXMZ0nvXvaUhOp3bXEtqUXGkTNhsbkj5HD2vDE_90CexRH0bwx0GAA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
@@ -166,7 +164,7 @@ autoclean = []
 # Images
 START_IMG_URL = getenv(
     "START_IMG_URL", 
-    "assets/vegetamusicstart.jpeg",
+    "https://te.legra.ph/file/01d34f935cc696bdcddb2.jpg",
 )
 
 PING_IMG_URL = getenv(
