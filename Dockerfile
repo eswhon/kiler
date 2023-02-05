@@ -11,4 +11,4 @@ RUN npm i -g npm
 COPY . /app/
 WORKDIR /app/
 RUN pip3 install -U -r requirements.txt
-RUN bash start
+RUN python3 -m KillerXMusic
